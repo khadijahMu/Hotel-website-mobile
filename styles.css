@@ -1,0 +1,10 @@
+:root{
+    --peach-color: #EE685F;
+    --blue-color: #2A90D9;
+}
+.montserrat{
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
