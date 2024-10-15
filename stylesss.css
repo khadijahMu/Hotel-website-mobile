@@ -1,0 +1,152 @@
+/* Special Offer Card */
+.special-offer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Offer Image */
+.offer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Rate Section (Top Left) */
+.rate {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+/* Rating Container */
+.rating-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Rectangle Image (Rating Background) */
+.rating-background {
+    width: 67px;
+    height: 32px;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Rating Content (Star and Text) */
+.rating-content {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+/* Star Icon */
+.star-icon {
+    width: 15px;
+    height: auto;
+    margin-right: 5px;
+}
+
+/* Rating Text */
+.rating-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #130101;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Heart Icon (Top Right) */
+.heart {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.heart-icon {
+    width: 24px;
+    height: auto;
+}
+
+/* Offer Details Section (New Text Below the Image) */
+.offer-details {
+    margin-top: 15px; /* Space between the image and text */
+    text-align: left; /* Align text to the left */
+    align-content: left;
+    width: 100%;
+}
+
+/* Offer Title */
+.offer-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+/* Offer Date and Price */
+.offer-date-price {
+    font-size: 16px;
+    color: #555;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Light Blue Span Text */
+.offer-date-price span {
+    color: #0099ff; /* Light blue color */
+    font-weight: bold;
+}
+
+/* For Mobile Responsiveness */
+@media (max-width: 768px) {
+    .special-offer {
+        max-width: 100%;
+    }
+
+    .rate {
+        top: 8px;
+        left: 8px;
+    }
+
+    .rating-background {
+        width: 60px;
+        height: 28px;
+    }
+
+    .star-icon {
+        width: 12px;
+    }
+
+    .rating-text {
+        font-size: 14px;
+    }
+
+    .heart {
+        top: 8px;
+        right: 8px;
+    }
+
+    .heart-icon {
+        width: 20px;
+    }
+
+    .offer-title {
+        font-size: 16px;
+    }
+
+    .offer-date-price {
+        font-size: 14px;
+    }
+}

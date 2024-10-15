@@ -8,3 +8,636 @@
     font-weight: <weight>;
     font-style: normal;
 }
+/* General styling for the nav container */
+.nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+/* Left part of the nav: menu icon and logo */
+.nav-left {
+    display: flex;
+    align-items: center; 
+}
+/* Styling for the menu icon */
+.menu-icon {
+    width: 24px; 
+    height: auto;
+    margin-right: 20px; 
+}
+/* for the logo (h2) */
+.nav-left h2 {
+    margin: 0;
+    font-size: 18px; 
+    display: flex;
+}
+/* Different colors for span texts */
+.blue {
+    color:  #2A90D9; 
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 32px;
+}
+.peach {
+    color:#EE685F;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 32px;
+}
+/* Styling for the profile image */
+.profile-img {
+    width: 32px; 
+    height: auto;
+    border-radius: 50%; 
+}
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .nav {
+        padding: 8px 16px; 
+    }
+    .nav-left h2 {
+        font-size: 16px;
+    }
+    .profile-img {
+        width: 28px; 
+    }
+    .menu-icon {
+        width: 20px; 
+    }
+}
+/* Background Image Section */
+.background-image {
+    background-image: url('hotel images/Rectangle 5.png'); /* Set the image as the background */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* No repeating background */
+    width: 100%; /* Full width */
+    min-height: 60vh; /* Minimum height for desktop view */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding for internal spacing */
+    box-sizing: border-box; /* Include padding in the total width/height */
+    text-align: center; /* Center text horizontally */
+    color: white; /* Text color for better contrast */
+}
+/* General Styles for the Background Image Section */
+/* General Styles for the Background Image Section */
+.background-image {
+    background-color: #f0f0f0; /* Light background if no image */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text and content to the left */
+    color: black;
+    box-sizing: border-box;
+}
+
+.background-image h2,
+.background-image h4 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.background-image h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.background-image h4 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Search Bar Container */
+.search {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Rectangle Image (Search Bar Background) */
+.search-background {
+    width: 100%; /* Full width of the container */
+    height: auto;
+    display: block;
+}
+
+/* Search Content (Text, Icon, and Button) */
+.search-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width inside the search bar */
+    padding: 10px 20px; /* Add padding inside the search bar */
+    box-sizing: border-box;
+}
+
+/* Left Content (Icon and Text) */
+.left-content {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+}
+
+/* Location Icon */
+.location-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Text Content */
+.text-content h4 {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    font-family: "Montseerat";
+}
+
+.text-content span {
+    color:#A3A3A3; /* Grey color for the span text */
+    font-size: 16px;
+}
+
+/* Search Button on the Right */
+.search-button {
+    width: 50px;
+    height: auto;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .background-image {
+        padding: 30px 15px;
+    }
+
+    .background-image h2 {
+        font-size: 28px;
+    }
+
+    .background-image h4 {
+        font-size: 16px;
+    }
+
+    .search {
+        max-width: 500px;
+    }
+
+    .search-content {
+        padding: 10px; /* Slightly reduce padding for smaller screens */
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    .background-image {
+        padding: 20px 10px;
+    }
+
+    .background-image h2 {
+        font-size: 24px;
+    }
+
+    .background-image h4 {
+        font-size: 14px;
+    }
+
+    /* Adjustments for the Search Bar on Mobile */
+    .search-content {
+        flex-direction: row; /* Keep row direction */
+        justify-content: space-between; /* Ensure text is on the left, button on the right */
+        width: 100%; /* Full width inside the search bar */
+        padding: 8px 15px; /* Reduce padding for mobile */
+    }
+
+    .location-icon {
+        width: 25px; /* Smaller icon size for mobile */
+        margin-right: 8px;
+    }
+
+    .text-content h4 {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    .search-button {
+        width: 40px; /* Adjust button size for mobile */
+    }
+}
+/* Why Choose Us section */
+.why {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align the text */
+    margin-top: 30px; /* Add margin to separate it from other sections */
+}
+
+/* Heading Styling */
+.why h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #303038; /* Dark color for the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    font-weight: bold;
+}
+
+/* Subtext Styling */
+.why h4 {
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #333333; /* Medium-dark color for the text */
+    line-height: 1.6; /* Adjust line height for better readability */
+    margin: 0 auto; /* Ensure the subtext is centered */
+    max-width: 600px; /* Limit the width for better readability */
+}
+.special{
+    background-color: #fff;
+    padding-top: 25px ;
+}
+.special P{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Ag h2_mobile" ;
+}
+/* General container styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between the boxes */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Individual section styling (payment, simple, support, nice) */
+.container div {
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a nice effect */
+    width: 250px; /* Set a consistent width for each section */
+}
+
+/* Image styling */
+.container div img {
+    width: 100px; /* Set consistent size for the images */
+    height: auto;
+    margin-bottom: 15px; /* Space between the image and the heading */
+}
+
+/* Heading styling */
+.container div h2 {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px; /* Space between heading and subtext */
+}
+
+/* Subtext styling */
+.container div h4 {
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center;
+    }
+
+    .container div {
+        width: 100%; /* Full width for mobile devices */
+        max-width: 400px;
+    }
+}
+/* Special Offer Card */
+.special-offer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+/* Offer Image */
+.offer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Rate Section (Top Left) */
+.rate {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+/* Rating Container */
+.rating-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Rectangle Image (Rating Background) */
+.rating-background {
+    width: 67px;
+    height: 32px;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Rating Content (Star and Text) */
+.rating-content {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+/* Star Icon */
+.star-icon {
+    width: 15px;
+    height: auto;
+    margin-right: 5px;
+}
+
+/* Rating Text */
+.rating-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #130101;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Heart Icon (Top Right) */
+.heart {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.heart-icon {
+    width: 24px;
+    height: auto;
+}
+
+
+/* Offer Details Section (New Text Below the Image) */
+.offer-details {
+    margin-top: 15px; /* Space between the image and text */
+    text-align: left; /* Align text to the left */
+    width: 100%;
+}
+
+/* Offer Title */
+.offer-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    font-family: "Montserrat";
+    line-height: 1.2;
+}
+
+/* Offer Date and Price */
+.offer-date-price {
+    font-size: 18px;
+    color: #555;
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+/* Light Blue Span Text */
+ span .price-large{
+    color: #2A90D9; /* Light blue color for span text */
+    font-weight: bold;
+    font-size: 30px;
+}
+span .price-small{
+    color: #2A90D9; /* Light blue color for span text */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* For Mobile Responsiveness */
+@media (max-width: 768px) {
+    .special-offer {
+        max-width: 100%;
+    }
+
+    .rate {
+        top: 30px;
+        left: 30px;
+    }
+
+    .rating-background {
+        width: 60px;
+        height: 28px;
+    }
+
+    .star-icon {
+        width: 12px;
+    }
+
+    .rating-text {
+        font-size: 14px;
+    }
+
+    .heart {
+        top: 30px;
+        right: 30px;
+    }
+
+    .heart-icon {
+        width: 20px;
+    }
+
+    .offer-title {
+        font-size: 16px;
+    }
+
+    .offer-date-price {
+        font-size: 14px;
+    }
+}
+/* Reviews Section */
+.reviews {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 24px;
+    color: #130000;
+    margin-bottom: 20px;
+    
+}
+
+/* Scrollable Container for All Reviews (Original + Dynamic) */
+.reviews-container {
+    display: flex; /* Flexbox layout to align items horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Ensure no line breaks in flex items */
+    padding: 20px 0;
+    margin: 0 -20px;
+}
+
+/* Main Review Content (Original Review) */
+.review-content, .review-block {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 10px; /* Space between reviews */
+    min-width: 280px; /* Set width for mobile view */
+    max-width: 400px; /* Maximum width on larger screens */
+    text-align: left;
+    display: inline-block; /* Align inline with other reviews */
+    vertical-align: top;
+    text-align: center; /* Center image and text inside */
+}
+
+/* Reviewer Image (Centered) */
+.reviewer-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Ensure image is centered */
+}
+
+/* Review Text */
+.review-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #110101;
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left */
+    width: 100%;
+    white-space: normal; /* Allow text to wrap */
+}
+
+/* Reviewer Name */
+.reviewer-name {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    
+
+} 
+.reviewer-name span{
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+/* Show More Button */
+.show-more-btn {
+    cursor: pointer;
+    display: block;  /* Ensure the button is always visible */
+    margin: 20px auto;  /* Center the button */
+    width: 328;  /* Adjust width as needed */
+    height: 50;
+}
+/* Additional reviews hidden by default */
+.additional-reviews {
+    display: none; /* Hidden by default */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .review-content, .review-block {
+        width: 90%; /* Adjust width for mobile */
+    }
+
+    .reviews-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}
+.recent-post {
+    width: 80%;
+    margin: 0 auto; /* Centers the entire post section */
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.post-title {
+    text-align: center; /* Centers the title */
+    font-size: 2rem;
+    color: #333;
+}
+
+.date-time {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 10px;
+}
+
+.post-date {
+    font-size: 1rem;
+    color: #080000;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.time-icon {
+    display: flex;
+    align-items: center;
+}
+
+.time-icon img {
+    margin-right: 5px;
+}
+
+.time-icon span {
+    font-size: 1rem;
+    color: #2A90D9;
+}
+
+.description {
+    margin-top: 20px;
+    text-align: left; 
+}
+
+.description h4 {
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    color: #0c0000;
+}
+
+.description h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: #140101;
+    line-height: 1.5;
+}
+
