@@ -3,41 +3,45 @@
     background-color: #f0f0f0;  /* Light grey background */
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;  /* Left-align everything inside the section */
-    justify-content: space-between;  /* Distribute items evenly between the top and bottom */
-    height: 220px;  /* Reduced height to minimize space between elements */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: flex-start;  /* Ensure top alignment */
     border-top: 2px solid #999999;  /* Grey border line at the top */
-    margin: 0;
+    width: 100%;  /* Ensure full width of the container */
+    box-sizing: border-box;  /* Include padding and borders in width */
 }
 
 /* Styling for the heading (logo) */
 .socials h2 {
     font-size: 24px;
-    margin-bottom: 10px;  /* Reduce space below the logo */
     color: #333;
+    margin: 0;  /* Clear any default margins */
+    padding-bottom: 20px;  /* Explicit padding below the logo */
+    width: 100%;  /* Ensure the logo takes full width */
 }
 
 /* Social Media Icons Styling */
 .social-icons {
     display: flex;
     justify-content: flex-start;  /* Align icons to the left */
-    gap: 10px;  /* Reduced space between the icons */
-    align-items: center;  /* Vertically center icons */
-    margin-bottom: 10px;  /* Reduce space below the icons */
+    gap: 15px;  /* Space between the icons */
+    padding-bottom: 20px;  /* Explicit padding below the icons */
+    width: 100%;  /* Full width to avoid overlap */
 }
 
 /* Adjust icon size */
 .social-icons img {
-    width: 35px;  /* Slightly smaller icon size */
-    height: 35px;
+    width: 40px;  /* Set a consistent icon size */
+    height: 40px;
+    display: block;  /* Ensure the icons behave like block elements */
 }
 
 /* Styling for the designer credit */
 .socials p {
     font-size: 14px;
     color: #333;  /* Darker text for the paragraph */
-    align-self: flex-start;  /* Align text to the left */
+    margin: 0;  /* Clear default margins */
+    padding-top: 20px;  /* Add padding above the designer credit */
+    width: 100%;  /* Ensure the paragraph takes full width */
 }
 
 /* Styling for the designer span */

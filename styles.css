@@ -76,8 +76,6 @@
     font-size: 24px;
     font-weight: bold;
 }
-
-/* Currency Section */
 /* Currency Section */
 .currency {
     display: flex;
@@ -802,33 +800,41 @@ span .price-small{
     height: 24px;
     align-content: left;
 }
-/* Socials Section Styling */
+/* Footer Section Styling */
 .socials {
     background-color: #f0f0f0;  /* Light grey background */
     padding: 20px;
-    display: flex;
-    flex-direction: column;  /* Stack items vertically */
-    align-items: flex-start;  /* Align everything to the left */
-    border-top: 2px solid #999999;  /* Grey border line at the top */
-    margin: 0;
-    width: 100%;  /* Ensure full width of the container */
+    text-align: left;  /* Align text to the left */
+    border-top: 2px solid #999999;  /* Light grey border line at the top */
+    width: 100%;  /* Ensure the footer takes full width */
+    box-sizing: border-box;  /* Include padding and borders in width */
 }
 
 /* Styling for the heading (logo) */
 .socials h2 {
     font-size: 24px;
-    margin-bottom: 30px;  /* Ensure space below the logo */
-    color: #333;
-    line-height: 1.2;  /* Make sure the line height doesn't cause overlap */
-    width: 100%;  /* Ensure the logo takes full width */
+    color: #333;  /* General text color */
+    margin: 0;  /* Remove any default margin */
+    padding-bottom: 10px;  /* Space below the logo */
+    width: 100%;  /* Ensure full width */
+    font-family: 'Montserrat', sans-serif;  /* Add a font family */
 }
 
-/* Social Media Icons Styling */
+/* Styling for the span with the class 'bluee' */
+.bluee {
+    color: #007BFF;  /* Blue color for the first part */
+}
+
+/* Styling for the span with the class 'peachh' */
+.peachh {
+    color: #FF6347;  /* Peach color for the second part */
+}
 .social-icons {
+    background-color: #f0f0f0;  /* Light grey background */
     display: flex;
     justify-content: flex-start;  /* Align icons to the left */
-    gap: 20px;  /* Space between the icons */
-    margin-bottom: 30px;  /* Space below the social media icons */
+    gap: 15px;  /* Space between the icons */
+    padding-bottom: 20px;  /* Explicit padding below the icons */
     width: 100%;  /* Full width to avoid overlap */
 }
 
@@ -836,23 +842,23 @@ span .price-small{
 .social-icons img {
     width: 40px;  /* Set a consistent icon size */
     height: 40px;
-    display: block;  /* Ensure the icons behave like block elements */
+    /* display: block;  Ensure the icons behave like block elements */
 }
-
 /* Styling for the designer credit */
 .socials p {
     font-size: 14px;
     color: #333;  /* Darker text for the paragraph */
-    align-self: flex-start;  /* Align text to the left */
-    margin-top: 30px;  /* Space above the designer credit */
+    margin: 0;  /* Clear default margins */
+    padding-top: 20px;  /* Add padding above the designer credit */
     width: 100%;  /* Ensure the paragraph takes full width */
 }
 
 /* Styling for the designer span */
 .socials .designer {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     color: #2A90D9;  /* Light blue color */
     text-decoration: underline;  /* Underline the text */
     text-decoration-color: #2A90D9;  /* Light blue underline */
 }
+
