@@ -854,11 +854,11 @@ span .price-small{
 
 /* Designer Credit */
 .socials p {
-    font-size: 13px; /* Slightly smaller font for designer credit */
+    font-size: 13px; 
     color: #666;
     position: absolute;
-    bottom: 10px; /* Keeps the designer credit closer to the icons */
-    left: 20px; /* Aligns designer credit to the left */
+    bottom: 10px; 
+    left: 20px; 
 }
 
 .socials .designer {
