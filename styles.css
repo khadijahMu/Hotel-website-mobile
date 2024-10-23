@@ -883,9 +883,9 @@ span .price-small{
     width: 100%;
     height: 100vh;
     background-color: #fff;
-    overflow-y: auto; /* Enable scrolling for large content */
+    overflow-y: auto; 
     z-index: 1000;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 /* Deals Content Styling */
