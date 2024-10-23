@@ -8,7 +8,6 @@
     font-weight: <weight>;
     font-style: normal;
 }
-/* General styling for the nav container */
 /* Navigation Bar Styling */
 .nav {
     display: flex;
@@ -800,65 +799,116 @@ span .price-small{
     height: 24px;
     align-content: left;
 }
-/* Footer Section Styling */
+/* Socials Section Styling */
 .socials {
-    background-color: #f0f0f0;  /* Light grey background */
-    padding: 20px;
-    text-align: left;  /* Align text to the left */
-    border-top: 2px solid #999999;  /* Light grey border line at the top */
-    width: 100%;  /* Ensure the footer takes full width */
-    box-sizing: border-box;  /* Include padding and borders in width */
-}
-
-/* Styling for the heading (logo) */
-.socials h2 {
-    font-size: 24px;
-    color: #333;  /* General text color */
-    margin: 0;  /* Remove any default margin */
-    padding-bottom: 10px;  /* Space below the logo */
-    width: 100%;  /* Ensure full width */
-    font-family: 'Montserrat', sans-serif;  /* Add a font family */
-}
-
-/* Styling for the span with the class 'bluee' */
-.bluee {
-    color: #007BFF;  /* Blue color for the first part */
-}
-
-/* Styling for the span with the class 'peachh' */
-.peachh {
-    color: #FF6347;  /* Peach color for the second part */
-}
-.social-icons {
-    background-color: #f0f0f0;  /* Light grey background */
     display: flex;
-    justify-content: flex-start;  /* Align icons to the left */
-    gap: 15px;  /* Space between the icons */
-    padding-bottom: 20px;  /* Explicit padding below the icons */
-    width: 100%;  /* Full width to avoid overlap */
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    height: 220px; /* Reduced overall height */
+    position: relative;
 }
 
-/* Adjust icon size */
+/* Logo Styling */
+.socials h2 {
+    font-size: 28px; /* Slightly smaller font size for the logo */
+    font-family: "Montserrat";
+    font-weight: bold;
+    margin-bottom: 0;
+    position: absolute;
+    top: 10px; /* Positioned closer to the top */
+    left: 20px; /* Aligns logo to the left */
+}
+
+/* Custom colors for logo */
+.bluee {
+    color: #007bff;
+}
+
+.peachh {
+    color: #ff6347;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Aligns icons to the left */
+    gap: 10px; /* Reduces space between icons */
+    position: absolute;
+    top: 40%; /* Moves icons closer to the logo */
+    left: 20px; /* Aligns icons to the left */
+    transform: translateY(-40%);
+}
+
 .social-icons img {
-    width: 40px;  /* Set a consistent icon size */
-    height: 40px;
-    /* display: block;  Ensure the icons behave like block elements */
-}
-/* Styling for the designer credit */
-.socials p {
-    font-size: 14px;
-    color: #333;  /* Darker text for the paragraph */
-    margin: 0;  /* Clear default margins */
-    padding-top: 20px;  /* Add padding above the designer credit */
-    width: 100%;  /* Ensure the paragraph takes full width */
+    width: 35px; /* Slightly smaller icons */
+    height: 35px;
+    transition: transform 0.3s ease;
 }
 
-/* Styling for the designer span */
-.socials .designer {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #2A90D9;  /* Light blue color */
-    text-decoration: underline;  /* Underline the text */
-    text-decoration-color: #2A90D9;  /* Light blue underline */
+.social-icons img:hover {
+    transform: scale(1.2);
 }
+
+/* Designer Credit */
+.socials p {
+    font-size: 13px; /* Slightly smaller font for designer credit */
+    color: #666;
+    position: absolute;
+    bottom: 10px; /* Keeps the designer credit closer to the icons */
+    left: 20px; /* Aligns designer credit to the left */
+}
+
+.socials .designer {
+    font-weight: bold;
+    color: #2A90D9;
+    text-decoration: underline; 
+    text-decoration-color: #2A90D9;  
+
+}
+/* Adjust any content inside the pages as needed */
+.deals-content, .menu-list {
+    padding: 40px;
+    text-align: left;
+}
+
+
+/* Deals Page - Fullscreen */
+.deals-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow-y: auto; /* Enable scrolling for large content */
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+/* Deals Content Styling */
+.deals-content {
+    padding: 20px;
+}
+
+.special-offer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
 

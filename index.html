@@ -21,8 +21,8 @@
     </div>
 </div>
 
-<!-- Hidden Menu Page -->
-<div class="menu-page" id="menu-page">
+<!-- Main Menu Page -->
+<div class="menu-page" id="menu-page" style="display: block;"> <!-- Show the menu initially -->
     <div class="nav">
         <div class="nav-left">
             <img src="hotel images/menu (2).svg" alt="Cancel Icon" class="close-menu" id="close-menu">
@@ -32,10 +32,10 @@
             <img src="hotel images/icon (2).svg" alt="profile image" class="profile-img">
         </div>
     </div>
-   
+
     <!-- Menu List -->
     <ul class="menu-list">
-        <li><a href="#deals">Last Minute Deals</a></li>
+        <li><a href="#" id="deals-link">Last Minute Deals</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -47,14 +47,428 @@
         <img src="hotel images/RU (2).svg" alt="Rupee Icon">
     </div>
 
-    <!-- Social Media Icons at the Bottom -->
+     <!-- Social Media Icons -->
+     <div class="social-icons-last">
+        <img src="hotel images/Phone_black.svg" alt="Phone Icon">
+        <img src="hotel images/Social_icons_black.svg" alt="Social Icons">
+        <img src="hotel images/Youtube.svg" alt="YouTube Icon">
+        <img src="hotel images/Instagram.svg" alt="Instagram Icon">
+        <img src="hotel images/Telegram.svg" alt="Telegram Icon">
+    </div> 
+
+</div>
+
+<!-- Full Last Minute Deals Page -->
+<div class="deals-page" id="deals-page" style="display: none;"> <!-- Initially hidden -->
+    <!-- Navigation Bar similar to front page -->
+    <div class="nav">
+        <div class="nav-left">
+            <img src="hotel images/menu (2).svg" alt="Back Icon" class="close-deals" id="close-deals">
+            <h2><span class="blue">Your</span><span class="peach">.logo</span></h2>
+        </div>
+        <div class="profile">
+            <img src="hotel images/icon (2).svg" alt="profile image" class="profile-img">
+        </div>
+    </div>
+
+    <!-- Full-page Deals Content -->
+    <div class="deals-content">
+        <h1 style="font-family: Montserrat; text-align: center;">Last Minute Deals</h1>
+        <div class="search">
+            <img src="hotel images/Rectangle 7.png" alt="Search Bar Background" class="search-background">
+            <div class="search-content">
+                <div class="left-content">
+                    <img src="hotel images/icon (5).svg" alt="Location Icon" class="location-icon">
+                    <div class="text-content">
+                        <h4>Where <br> <span>Search Destination</span></h4>
+                    </div>
+                </div>
+                <img src="hotel images/button.svg" alt="Search Button" class="search-button">
+            </div>
+        </div>
+
+        <div class="btn">
+            <img src="hotel images/btn (2).png" alt="">
+            <img src="hotel images/btn (4).svg" alt="">
+        </div>
+
+        <!-- deal images --->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9.png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- first image -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (1).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- second deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (2).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+                <!-- third deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (3).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+                <!-- fourth deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (4).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+                    <!-- fifth deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (6).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (6).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+            <!-- sixth deal -->
+        
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (10).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div> 
+                <!-- seventh deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (11).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+                    <!-- eighth deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (12).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div> 
+                <!-- nineth deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (13).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div> 
+                <!-- 10th deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (9).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div> 
+                <!-- 11th deal -->
+        <div class="special-offer">
+            <img src="hotel images/Rectangle 9 (16).png" alt="Offer Image" class="offer-image">
+            <div class="rate">
+                <div class="rating-container">
+                    <img src="hotel images/Rectangle 19.png" alt="Rating Background" class="rating-background">
+                    <div class="rating-content">
+                        <img src="hotel images/Star 1.png" alt="Star Icon" class="star-icon">
+                        <span class="rating-text">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heart">
+                <img src="hotel images/favorite (1).svg" alt="Heart Icon" class="heart-icon">
+            </div>
+            <div class="offer-details">
+                <p class="offer-title">Wilderness Club at Big Cedar</p>
+                <p class="offer-date-price">28 October — 1 November</p>
+                <span class="price">
+                    <span class="price-large">$2016</span> 
+                    <span class="price-small">/ 6 nights</span>
+                </span>
+            </div>
+        </div>
+                <div class="view">
+                    <img src="hotel images/btn (7).svg" alt="">
+                </div> 
+    </div> <!-- End of .deals-content -->
+    <div class="title-of-section">
+        <h2>Title Of Section</h2>
+        <h4>Page Title</h4>
+        <h4>Page Title</h4>
+        <h4>Page Title</h4>
+    </div>
+    
+    <div class="title-of-section">
+        <h2>Title Of Section</h2>
+        <h4>Page Title</h4>
+        <h4>Page Title</h4>
+        <h4>Page Title</h4>
+    </div>
+    
+    <div class="title-of-section">
+        <h2>Title Of Section</h2>
+        <h4>Page Title</h4>
+        <h4>Page Title</h4>
+        <h4>Page Title</h4>
+    </div>
+    <div class="newsletter">
+        <h2>Subscribe to Newsletter</h2>
+        <h4>Your email</h4>
+        <div class="newsletter-input">
+            <img src="hotel images/Rectangle 9 (1).svg" alt="Input background" class="input-bg">
+            <img src="hotel images/Rectangle 20.svg" alt="Send button background" class="send-bg">
+            <img src="hotel images/carbon_send-alt.svg" alt="Send icon" class="send-icon">
+        </div>
+    </div>
+     
+        <!-- Socials Section -->
+<div class="socials">
+    <!-- Logo -->
+    <h2><span class="bluee">Your</span><span class="peachh">.logo</span></h2>
+
+    <!-- Social Media Icons -->
     <div class="social-icons">
         <img src="hotel images/Phone_black.svg" alt="Phone Icon">
         <img src="hotel images/Social_icons_black.svg" alt="Social Icons">
         <img src="hotel images/Youtube.svg" alt="YouTube Icon">
         <img src="hotel images/Instagram.svg" alt="Instagram Icon">
         <img src="hotel images/Telegram.svg" alt="Telegram Icon">
-    </div>
+    </div> 
+
+    <!-- Designer Credit -->
+            <p>Design by <span class="designer">Delvig</span></p>
+</div> 
+
+
+        
+
+   
+
+
+</div> <!-- End of .deals-page -->
+                
+
+    
+
 </div>
         <!-- Hero Section with Search -->
     <div class="background-image">
