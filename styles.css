@@ -323,8 +323,8 @@
 .why h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
-    color: #303038; /* Dark color for the heading */
-    margin-bottom: 20px; /* Add spacing below the heading */
+    color: #303038; 
+    margin-bottom: 20px; 
     font-weight: bold;
 }
 
