@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;  /* Suitable padding for the nav section */
+    padding: 15px 20px;
     height: 60px;
 }
 
@@ -23,45 +23,45 @@
 }
 
 .nav-left h2 {
-    margin-left: 10px;  /* Space between menu icon and logo */
+    margin-left: 10px;  
 }
 
 .profile {
     display: flex;
     align-items: center;
-    margin-right: 20px;  /* Space between the profile image and the right edge */
+    margin-right: 20px;  
 }
 
 .profile-img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;  /* Circular profile image */
+    border-radius: 50%;  
 }
 
 /* Hidden Menu Page */
 .menu-page {
-    display: none;  /* Initially hidden */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #f0f0f0;  /* Solid light grey background */
+    background-color: #f0f0f0; 
     z-index: 1000;
     color: #333;
     padding: 20px;
 }
 
 .menu-page .nav {
-    background-color: inherit;  /* Match the hidden nav background with page */
-    padding-bottom: 20px;  /* Suitable padding for the hidden nav */
+    background-color: inherit; 
+    padding-bottom: 20px; 
 }
 
 /* Menu List */
 .menu-list {
     list-style: none;
     padding: 0;
-    margin-top: 50px;  /* Space between nav and menu list */
+    margin-top: 50px; 
     text-align: left;
 }
 
@@ -79,15 +79,15 @@
 .currency {
     display: flex;
     justify-content: flex-start;
-    gap: 15px;  /* Space between the currency images */
-    margin: 40px 0;  /* Space between the currency section and other elements */
+    gap: 15px;  
+    margin: 40px 0; 
 }
 
 .currency img {
     width: 30px;
     height: 30px;
-    border-bottom: 2px dotted #EE685F;  /* Dotted underline */
-    padding-bottom: 5px;  /* Space between the image and the dotted underline */
+    border-bottom: 2px dotted #EE685F; 
+    padding-bottom: 5px;
 }
 
 /* Social Media Icons */
@@ -95,16 +95,16 @@
     position: absolute;
     bottom: 5x;
     display: flex;
-    justify-content: flex-start;  /* Align icons to the left */
-    gap: 15px;  /* Space between the icons */
+    justify-content: flex-start;  
+    gap: 15px;  
 }
 
 /* Social Media Icons */
 .social-icons {
     margin-top: 50px;
     display: flex;
-    justify-content: flex-start;  /* Align icons to the left */
-    gap: 15px;  /* Space between the icons */
+    justify-content: flex-start;  
+    gap: 15px;
 }
 
 .social-icons img {
@@ -149,27 +149,27 @@
 
 /* Background Image Section */
 .background-image {
-    background-image: url('hotel images/Rectangle 5.png'); /* Set the image as the background */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center center; /* Center the background image */
-    background-repeat: no-repeat; /* No repeating background */
-    width: 100%; /* Full width */
-    min-height: 60vh; /* Minimum height for desktop view */
+    background-image: url('hotel images/Rectangle 5.png'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    min-height: 60vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Padding for internal spacing */
-    box-sizing: border-box; /* Include padding in the total width/height */
-    text-align: center; /* Center text horizontally */
-    color: white; /* Text color for better contrast */
+    padding: 20px; 
+    box-sizing: border-box;
+    text-align: center; 
+    color: white; 
 }
 /* General Styles for the Background Image Section */
 .background-image {
-    background-color: #f0f0f0; /* Light background if no image */
+    background-color: #f0f0f0;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align text and content to the left */
+    align-items: flex-start;
     color: black;
     box-sizing: border-box;
 }
@@ -199,9 +199,9 @@
     max-width: 600px;
 }
 
-/* Rectangle Image (Search Bar Background) */
+/* Rectangle Image */
 .search-background {
-    width: 100%; /* Full width of the container */
+    width: 100%; 
     height: auto;
     display: block;
 }
@@ -215,22 +215,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Full width inside the search bar */
-    padding: 10px 20px; /* Add padding inside the search bar */
+    width: 100%; 
+    padding: 10px 20px; 
     box-sizing: border-box;
 }
 
 /* Left Content (Icon and Text) */
 .left-content {
     display: flex;
-    align-items: center; /* Align icon and text vertically */
+    align-items: center; 
 }
 
 /* Location Icon */
 .location-icon {
     width: 30px;
     height: auto;
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px; 
 }
 
 /* Text Content */
