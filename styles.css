@@ -359,15 +359,15 @@
 /* Individual section styling (payment, simple, support, nice) */
 .container div {
     padding: 20px;
-    border-radius: 8px; /* Rounded corners for a nice effect */
-    width: 250px; /* Set a consistent width for each section */
+    border-radius: 8px; 
+    width: 250px; 
 }
 
 /* Image styling */
 .container div img {
-    width: 100px; /* Set consistent size for the images */
+    width: 100px; 
     height: auto;
-    margin-bottom: 15px; /* Space between the image and the heading */
+    margin-bottom: 15px; 
 }
 
 /* Heading styling */
@@ -376,7 +376,7 @@
     font-weight: 800;
     font-size: 20px;
     color: #333;
-    margin-bottom: 10px; /* Space between heading and subtext */
+    margin-bottom: 10px; 
 }
 
 /* Subtext styling */
@@ -390,12 +390,12 @@
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack sections vertically on smaller screens */
+        flex-direction: column; 
         align-items: center;
     }
 
     .container div {
-        width: 100%; /* Full width for mobile devices */
+        width: 100%; 
         max-width: 400px;
     }
 }
@@ -483,10 +483,10 @@
 }
 
 
-/* Offer Details Section (New Text Below the Image) */
+/* Offer Details  */
 .offer-details {
-    margin-top: 15px; /* Space between the image and text */
-    text-align: left; /* Align text to the left */
+    margin-top: 15px; 
+    text-align: left; 
     width: 100%;
 }
 
@@ -510,12 +510,12 @@
 
 /* Light Blue Span Text */
  span .price-large{
-    color: #2A90D9; /* Light blue color for span text */
+    color: #2A90D9; 
     font-weight: bold;
     font-size: 30px;
 }
 span .price-small{
-    color: #2A90D9; /* Light blue color for span text */
+    color: #2A90D9; 
     font-weight: bold;
     font-size: 20px;
 }
@@ -578,11 +578,11 @@ span .price-small{
     
 }
 
-/* Scrollable Container for All Reviews (Original + Dynamic) */
+/* Scrollable Container for All Reviews (Original and rendered) */
 .reviews-container {
-    display: flex; /* Flexbox layout to align items horizontally */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Ensure no line breaks in flex items */
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap; 
     padding: 20px 0;
     margin: 0 -20px;
 }
@@ -591,13 +591,13 @@ span .price-small{
 .review-content, .review-block {
     padding: 20px;
     border-radius: 10px;
-    margin: 15px 10px; /* Space between reviews */
-    min-width: 280px; /* Set width for mobile view */
-    max-width: 400px; /* Maximum width on larger screens */
+    margin: 15px 10px; 
+    min-width: 280px; 
+    max-width: 400px; 
     text-align: left;
-    display: inline-block; /* Align inline with other reviews */
+    display: inline-block; 
     vertical-align: top;
-    text-align: center; /* Center image and text inside */
+    text-align: center;
 }
 
 /* Reviewer Image (Centered) */
@@ -608,18 +608,18 @@ span .price-small{
     margin-bottom: 15px;
     display: block;
     margin-left: auto;
-    margin-right: auto; /* Ensure image is centered */
+    margin-right: auto; 
 }
 
 /* Review Text */
 .review-text {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-size: 16px;
     color: #110101;
     margin-bottom: 10px;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
     width: 100%;
-    white-space: normal; /* Allow text to wrap */
+    white-space: normal; 
 }
 
 /* Reviewer Name */
@@ -643,20 +643,20 @@ span .price-small{
 /* Show More Button */
 .show-more-btn {
     cursor: pointer;
-    display: block;  /* Ensure the button is always visible */
-    margin: 20px auto;  /* Center the button */
-    width: 328;  /* Adjust width as needed */
+    display: block;  
+    margin: 20px auto; 
+    width: 328; 
     height: 50;
 }
 /* Additional reviews hidden by default */
 .additional-reviews {
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .review-content, .review-block {
-        width: 90%; /* Adjust width for mobile */
+        width: 90%; 
     }
 
     .reviews-container {
@@ -666,13 +666,13 @@ span .price-small{
 }
 .recent-post {
     width: 80%;
-    margin: 0 auto; /* Centers the entire post section */
+    margin: 0 auto; 
     padding: 20px;
     background-color: #ffffff;
 }
 
 .post-title {
-    text-align: center; /* Centers the title */
+    text-align: center; 
     font-size: 2rem;
     color: #333;
 }
@@ -745,12 +745,12 @@ span .price-small{
     font-weight: 400;
 }
 .newsletter {
-    background-color: #f0f0f0;  /* Light grey background */
+    background-color: #f0f0f0;  
     padding: 20px;
     text-align: left;
-    border-radius: 8px;  /* Optional: add rounded corners */
-    max-width: 400px;  /* Optional: limit width for better layout */
-    margin: 0 auto;  /* Center the section horizontally */
+    border-radius: 8px;  
+    max-width: 400px; 
+    margin: 0 auto;  
 }
 
 .newsletter h2 {
@@ -773,7 +773,7 @@ span .price-small{
     display: inline-block;
 }
 
-/* First icon: Rectangle (Input background) */
+/* First icon */
 .input-bg {
     width: 328;
     height: 40px;
@@ -792,9 +792,9 @@ span .price-small{
 }
 .send-icon {
     position: absolute;
-    right: 10px;  /* Move the icon a bit to the left inside the button */
+    right: 10px;  
     top: 50%;
-    transform: translateY(-50%);  /* Center the icon vertically */
+    transform: translateY(-50%);
     width: 24px;
     height: 24px;
     align-content: left;
@@ -803,23 +803,23 @@ span .price-small{
 .socials {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligns content to the left */
+    align-items: flex-start; 
     padding: 20px;
     background-color: #f9f9f9;
     margin-top: 20px;
-    height: 220px; /* Reduced overall height */
+    height: 220px; 
     position: relative;
 }
 
 /* Logo Styling */
 .socials h2 {
-    font-size: 28px; /* Slightly smaller font size for the logo */
+    font-size: 28px; 
     font-family: "Montserrat";
     font-weight: bold;
     margin-bottom: 0;
     position: absolute;
-    top: 10px; /* Positioned closer to the top */
-    left: 20px; /* Aligns logo to the left */
+    top: 10px; 
+    left: 20px; 
 }
 
 /* Custom colors for logo */
@@ -834,16 +834,16 @@ span .price-small{
 /* Social Media Icons */
 .social-icons {
     display: flex;
-    justify-content: flex-start; /* Aligns icons to the left */
-    gap: 10px; /* Reduces space between icons */
+    justify-content: flex-start; 
+    gap: 10px;
     position: absolute;
-    top: 40%; /* Moves icons closer to the logo */
-    left: 20px; /* Aligns icons to the left */
+    top: 40%; 
+    left: 20px; 
     transform: translateY(-40%);
 }
 
 .social-icons img {
-    width: 35px; /* Slightly smaller icons */
+    width: 35px; 
     height: 35px;
     transition: transform 0.3s ease;
 }
@@ -868,7 +868,7 @@ span .price-small{
     text-decoration-color: #2A90D9;  
 
 }
-/* Adjust any content inside the pages as needed */
+/* deals*/
 .deals-content, .menu-list {
     padding: 40px;
     text-align: left;
