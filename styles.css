@@ -243,7 +243,7 @@
 }
 
 .text-content span {
-    color:#A3A3A3; /* Grey color for the span text */
+    color:#A3A3A3; 
     font-size: 16px;
 }
 
@@ -272,7 +272,7 @@
     }
 
     .search-content {
-        padding: 10px; /* Slightly reduce padding for smaller screens */
+        padding: 10px; 
     }
 }
 
@@ -292,31 +292,31 @@
 
     /* Adjustments for the Search Bar on Mobile */
     .search-content {
-        flex-direction: row; /* Keep row direction */
-        justify-content: space-between; /* Ensure text is on the left, button on the right */
-        width: 100%; /* Full width inside the search bar */
-        padding: 8px 15px; /* Reduce padding for mobile */
+        flex-direction: row; 
+        justify-content: space-between; 
+        width: 100%; 
+        padding: 8px 15px; 
     }
 
     .location-icon {
-        width: 25px; /* Smaller icon size for mobile */
+        width: 25px; 
         margin-right: 8px;
     }
 
     .text-content h4 {
-        font-size: 16px; /* Slightly smaller font for mobile */
+        font-size: 16px;
     }
 
     .search-button {
-        width: 40px; /* Adjust button size for mobile */
+        width: 40px; 
     }
 }
 /* Why Choose Us section */
 .why {
-    background-color: #f0f0f0; /* Light grey background */
-    padding: 40px 20px; /* Padding for spacing */
-    text-align: center; /* Center-align the text */
-    margin-top: 30px; /* Add margin to separate it from other sections */
+    background-color: #f0f0f0; 
+    padding: 40px 20px; 
+    text-align: center; 
+    margin-top: 30px; 
 }
 
 /* Heading Styling */
