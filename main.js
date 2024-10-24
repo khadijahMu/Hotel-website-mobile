@@ -17,7 +17,7 @@ const closeMenu = document.getElementById('close-menu');
 
 // Show the menu page when the menu icon is clicked
 menuIcon.addEventListener('click', function() {
-    menuPage.style.display = 'block';  // Display the menu page
+    menuPage.style.display = 'block'; 
 });
 
 // Hide the menu page when the close icon is clicked
