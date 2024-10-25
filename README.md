@@ -73,8 +73,6 @@ Check out the live demo of the project: [Live Demo Link](https://https://hotel-w
 
 - JavaScript
 
-- Bootstrap
-
 ## Setup and Installation
 with these simple steps below you can set up the website
 
