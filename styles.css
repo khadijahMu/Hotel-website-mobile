@@ -321,7 +321,7 @@
 
 /* Heading Styling */
 .why h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-size: 32px;
     color: #303038; 
     margin-bottom: 20px; 
@@ -332,10 +332,10 @@
 .why h4 {
     font-family: "Montserrat";
     font-size: 18px;
-    color: #333333; /* Medium-dark color for the text */
-    line-height: 1.6; /* Adjust line height for better readability */
-    margin: 0 auto; /* Ensure the subtext is centered */
-    max-width: 600px; /* Limit the width for better readability */
+    color: #333333;
+    line-height: 1.6; 
+    margin: 0 auto; 
+    max-width: 600px; 
 }
 .special{
     background-color: #fff;
