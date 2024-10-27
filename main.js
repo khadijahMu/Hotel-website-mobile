@@ -15,12 +15,11 @@ const menuIcon = document.getElementById('menu-icon');
 const menuPage = document.getElementById('menu-page');
 const closeMenu = document.getElementById('close-menu');
 
-// Show the menu page when the menu icon is clicked
+// Shows the menu page when the menu icon is clicked
 menuIcon.addEventListener('click', function() {
     menuPage.style.display = 'block'; 
 });
 
-// Hide the menu page when the close icon is clicked
 closeMenu.addEventListener('click', function() {
     menuPage.style.display = 'none';  // Hide the menu page
 });
