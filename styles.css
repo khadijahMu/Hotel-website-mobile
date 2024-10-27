@@ -578,7 +578,7 @@ span .price-small{
     
 }
 
-/* Scrollable Container for All Reviews (Original and rendered) */
+/* Scrollable Container for All Reviews (Original and dynamically renered content) */
 .reviews-container {
     display: flex;
     overflow-x: auto; 
