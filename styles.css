@@ -509,7 +509,7 @@
 }
 
 /* Light Blue Span Text */
- span .price-large{
+    span .price-large{
     color: #2A90D9; 
     font-weight: bold;
     font-size: 30px;
@@ -640,7 +640,7 @@ span .price-small{
     font-family: "Montserrat";
 }
 
-/* Show More Button */
+/* Show More Btn */
 .show-more-btn {
     cursor: pointer;
     display: block;  
