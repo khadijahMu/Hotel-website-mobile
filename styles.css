@@ -587,7 +587,7 @@ span .price-small{
     margin: 0 -20px;
 }
 
-/* Main Review Content (Original Review) */
+/* Main Review Content (initial Review) */
 .review-content, .review-block {
     padding: 20px;
     border-radius: 10px;
@@ -600,7 +600,7 @@ span .price-small{
     text-align: center;
 }
 
-/* Reviewer Image (Centered) */
+/* Reviewer Image  */
 .reviewer-image {
     width: 80px;
     height: 80px;
