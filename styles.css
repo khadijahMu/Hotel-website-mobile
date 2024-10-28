@@ -247,13 +247,13 @@
     font-size: 16px;
 }
 
-/* Search Button on the Right */
+/* Search Button on the */
 .search-button {
     width: 50px;
     height: auto;
 }
 
-/* Responsive Design for Tablets */
+/* Responsive Design for Tabs */
 @media (max-width: 768px) {
     .background-image {
         padding: 30px 15px;
