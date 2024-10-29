@@ -667,6 +667,7 @@ span .price-small{
     }
 }
 .recent-post {
+    align-content: center;
     width: 80%;
     margin: 0 auto; 
     padding: 20px;
