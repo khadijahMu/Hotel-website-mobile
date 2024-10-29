@@ -356,7 +356,7 @@
     text-align: center;
 }
 
-/* Individual section styling (payment, simple, support, nice) */
+/*styling section (payment, simple, support, nice) */
 .container div {
     padding: 20px;
     border-radius: 8px; 
@@ -424,7 +424,7 @@
     border-radius: 10px;
 }
 
-/* Rate Section (Top Left) */
+/* Rate Section Left */
 .rate {
     position: absolute;
     top: 25px;
@@ -437,7 +437,7 @@
     display: inline-block;
 }
 
-/* Rectangle Image (Rating Background) */
+/* Rectangle Image */
 .rating-background {
     width: 67px;
     height: 32px;
@@ -448,18 +448,20 @@
 /* Rating Content */
 .rating-content {
     position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 5px; 
 }
 
 /* Star Icon */
 .star-icon {
     width: 15px;
     height: auto;
-    margin-right: 5px;
 }
 
 /* Rating Text */
@@ -467,7 +469,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #130101;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
 }
 
 /* Heart Icon (Top Right) */
