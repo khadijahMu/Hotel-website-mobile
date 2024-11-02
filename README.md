@@ -27,7 +27,7 @@ introduction: The travel website is a website where you can explore fascinating 
 
 ## Live Demo
 
-Check out the live demo of the project: [https://hotel-website-mobile.onrender.com](# memory
+Check out the live demo of the project: [[https://hotel-website-mobile.onrender.com](# memory
 
 ## Table of Contents
 
@@ -56,7 +56,7 @@ introduction: The travel website is a website where you can explore fascinating 
 
 ## Live Demo
 
-Check out the live demo of the project: (https://https://hotel-website-mobile.onrender.com)
+Check out the live demo of the project: (https://hotel-website-mobile.onrender.com)
 
 ## Features
 
