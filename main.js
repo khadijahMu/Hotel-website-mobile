@@ -23,7 +23,6 @@ menuIcon.addEventListener('click', function() {
 closeMenu.addEventListener('click', function() {
     menuPage.style.display = 'none';  // Hide the menu page
 });
-
 // Show the deals page when "Last Minute Deals" is clicked
 document.getElementById('deals-link').addEventListener('click', function(event) {
     event.preventDefault();
@@ -35,7 +34,7 @@ document.getElementById('close-deals').addEventListener('click', function() {
     document.getElementById('deals-page').style.display = 'none';   // Hide the last deals page
     document.getElementById('menu-page').style.display = 'block';   // Show the main menu or previous page
 });
-    // "Why Choose Us" Section
+     // "Why Choose Us" Section
     const whyChooseUsData = [
         {
             imgSrc: "hotel images/img.png",
