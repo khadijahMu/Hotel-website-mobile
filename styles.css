@@ -8,6 +8,32 @@
     font-weight: <weight>;
     font-style: normal;
 }
+/* Splash screen styling */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.splash-content h1 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color:  #2A90D9;
+}
+/* Hide splash screen after fading out */
+#splash-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
 /* Navigation Bar Styling */
 .nav {
     display: flex;
@@ -16,28 +42,23 @@
     padding: 15px 20px;
     height: 60px;
 }
-
 .nav-left {
     display: flex;
     align-items: center;
 }
-
 .nav-left h2 {
     margin-left: 10px;  
 }
-
 .profile {
     display: flex;
     align-items: center;
     margin-right: 20px;  
 }
-
 .profile-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;  
 }
-
 /* Hidden Menu Page */
 .menu-page {
     display: none; 
@@ -46,17 +67,21 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #f0f0f0; 
+    background-color: rgba(240, 240, 240, 0.95); 
     z-index: 1000;
     color: #333;
     padding: 20px;
+    transition: display 0.3s ease; 
 }
-
-.menu-page .nav {
+/* Show Menu Page when active */
+.menu-page.active {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+}.menu-page .nav {
     background-color: inherit; 
     padding-bottom: 20px; 
 }
-
 /* Menu List */
 .menu-list {
     list-style: none;
@@ -64,11 +89,9 @@
     margin-top: 50px; 
     text-align: left;
 }
-
 .menu-list li {
     margin: 20px 0;
 }
-
 .menu-list li a {
     color: #333;
     text-decoration: none;
@@ -82,14 +105,12 @@
     gap: 15px;  
     margin: 40px 0; 
 }
-
 .currency img {
     width: 30px;
     height: 30px;
     border-bottom: 2px dotted #EE685F; 
     padding-bottom: 5px;
 }
-
 /* Social Media Icons */
 .social-icons {
     position: absolute;
@@ -98,7 +119,6 @@
     justify-content: flex-start;  
     gap: 15px;  
 }
-
 /* Social Media Icons */
 .social-icons {
     margin-top: 50px;
@@ -106,7 +126,6 @@
     justify-content: flex-start;  
     gap: 15px;
 }
-
 .social-icons img {
     width: 30px;
     height: 30px;
@@ -146,7 +165,6 @@
         width: 20px; 
     }
 }
-
 /* Background Image Section */
 .background-image {
     background-image: url('hotel images/Rectangle 5.png'); 
@@ -173,24 +191,20 @@
     color: black;
     box-sizing: border-box;
 }
-
 .background-image h2,
 .background-image h4 {
     font-family: "Montserrat";
     margin-bottom: 15px;
     text-align: left;
 }
-
 .background-image h2 {
     font-size: 50px;
     margin: 0;
 }
-
 .background-image h4 {
     font-size: 18px;
     line-height: 1.6;
 }
-
 /* Search Bar Container */
 .search {
     position: relative;
@@ -198,14 +212,12 @@
     width: 100%;
     max-width: 600px;
 }
-
 /* Rectangle Image */
 .search-background {
     width: 100%; 
     height: auto;
     display: block;
 }
-
 /* Search Content (Text, Icon, and Button) */
 .search-content {
     position: absolute;
@@ -219,20 +231,17 @@
     padding: 10px 20px; 
     box-sizing: border-box;
 }
-
 /* Left Content (Icon and Text) */
 .left-content {
     display: flex;
     align-items: center; 
 }
-
 /* Location Icon */
 .location-icon {
     width: 30px;
     height: auto;
     margin-right: 10px; 
 }
-
 /* Text Content */
 .text-content h4 {
     margin: 0;
@@ -241,72 +250,58 @@
     text-align: left;
     font-family: "Montseerat";
 }
-
 .text-content span {
     color:#A3A3A3; 
     font-size: 16px;
 }
-
 /* Search Button on the Right */
 .search-button {
     width: 50px;
     height: auto;
 }
-
 /* Responsive Design for Tablets */
 @media (max-width: 768px) {
     .background-image {
         padding: 30px 15px;
     }
-
     .background-image h2 {
         font-size: 28px;
     }
-
     .background-image h4 {
         font-size: 16px;
     }
-
     .search {
         max-width: 500px;
     }
-
     .search-content {
         padding: 10px; 
     }
 }
-
 /* Responsive Design for Mobile Devices */
 @media (max-width: 480px) {
     .background-image {
         padding: 20px 10px;
     }
-
     .background-image h2 {
         font-size: 24px;
     }
-
     .background-image h4 {
         font-size: 14px;
     }
-
-    /* Adjustments for the Search Bar on Mobile */
+    /* Adjustments for the Search Bar on phn */
     .search-content {
         flex-direction: row; 
         justify-content: space-between; 
         width: 100%; 
         padding: 8px 15px; 
     }
-
     .location-icon {
         width: 25px; 
         margin-right: 8px;
     }
-
     .text-content h4 {
         font-size: 16px;
     }
-
     .search-button {
         width: 40px; 
     }
@@ -318,24 +313,22 @@
     text-align: center; 
     margin-top: 30px; 
 }
-
-/* Heading Styling */
+/* Heading Style*/
 .why h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-size: 32px;
     color: #303038; 
     margin-bottom: 20px; 
     font-weight: bold;
 }
-
 /* Subtext Styling */
 .why h4 {
     font-family: "Montserrat";
     font-size: 18px;
-    color: #333333; /* Medium-dark color for the text */
-    line-height: 1.6; /* Adjust line height for better readability */
-    margin: 0 auto; /* Ensure the subtext is centered */
-    max-width: 600px; /* Limit the width for better readability */
+    color: #333333;
+    line-height: 1.6; 
+    margin: 0 auto; 
+    max-width: 600px; 
 }
 .special{
     background-color: #fff;
@@ -355,21 +348,18 @@
     padding: 20px;
     text-align: center;
 }
-
-/* Individual section styling (payment, simple, support, nice) */
+/*styling section (payment, simple, support, nice) */
 .container div {
     padding: 20px;
     border-radius: 8px; 
     width: 250px; 
 }
-
 /* Image styling */
 .container div img {
     width: 100px; 
     height: auto;
     margin-bottom: 15px; 
 }
-
 /* Heading styling */
 .container div h2 {
     font-family: "Montserrat";
@@ -378,7 +368,6 @@
     color: #333;
     margin-bottom: 10px; 
 }
-
 /* Subtext styling */
 .container div h4 {
     font-family: "Montserrat";
@@ -386,14 +375,12 @@
     color: #666;
     line-height: 1.5;
 }
-
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .container {
         flex-direction: column; 
         align-items: center;
     }
-
     .container div {
         width: 100%; 
         max-width: 400px;
@@ -423,73 +410,64 @@
     height: auto;
     border-radius: 10px;
 }
-
-/* Rate Section (Top Left) */
+/* Rate Section Left */
 .rate {
     position: absolute;
     top: 25px;
     left: 25px;
 }
-
 /* Rating Container */
 .rating-container {
     position: relative;
     display: inline-block;
 }
-
-/* Rectangle Image (Rating Background) */
+/* Rectangle Image */
 .rating-background {
     width: 67px;
     height: 32px;
     display: block;
     border-radius: 5px;
 }
-
-/* Rating Content (Star and Text) */
+/* Rating Content */
 .rating-content {
     position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 5px; 
 }
-
 /* Star Icon */
 .star-icon {
     width: 15px;
     height: auto;
-    margin-right: 5px;
 }
-
 /* Rating Text */
 .rating-text {
     font-size: 16px;
     font-weight: bold;
     color: #130101;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
 }
-
 /* Heart Icon (Top Right) */
 .heart {
     position: absolute;
     top: 25px;
     right: 25px;
 }
-
 .heart-icon {
     width: 24px;
     height: auto;
 }
-
-
 /* Offer Details  */
 .offer-details {
     margin-top: 15px; 
     text-align: left; 
     width: 100%;
 }
-
 /* Offer Title */
 .offer-title {
     font-size: 22px;
@@ -499,7 +477,6 @@
     font-family: "Montserrat";
     line-height: 1.2;
 }
-
 /* Offer Date and Price */
 .offer-date-price {
     font-size: 18px;
@@ -507,9 +484,8 @@
     font-family: "Montserrat";
     font-weight: 900;
 }
-
 /* Light Blue Span Text */
- span .price-large{
+    span .price-large{
     color: #2A90D9; 
     font-weight: bold;
     font-size: 30px;
@@ -519,44 +495,35 @@ span .price-small{
     font-weight: bold;
     font-size: 20px;
 }
-
 /* For Mobile Responsiveness */
 @media (max-width: 768px) {
     .special-offer {
         max-width: 100%;
     }
-
     .rate {
         top: 30px;
         left: 30px;
     }
-
     .rating-background {
         width: 60px;
         height: 28px;
     }
-
     .star-icon {
         width: 12px;
     }
-
     .rating-text {
         font-size: 14px;
     }
-
     .heart {
         top: 30px;
         right: 30px;
     }
-
     .heart-icon {
         width: 20px;
     }
-
     .offer-title {
         font-size: 16px;
     }
-
     .offer-date-price {
         font-size: 14px;
     }
@@ -567,7 +534,6 @@ span .price-small{
     padding: 20px;
     text-align: center;
 }
-
 /* Section Title */
 .section-title {
     font-family: "Montserrat";
@@ -577,8 +543,7 @@ span .price-small{
     margin-bottom: 20px;
     
 }
-
-/* Scrollable Container for All Reviews (Original and rendered) */
+/* Scrollable Container for All Reviews dyamic and original  */
 .reviews-container {
     display: flex;
     overflow-x: auto; 
@@ -586,8 +551,7 @@ span .price-small{
     padding: 20px 0;
     margin: 0 -20px;
 }
-
-/* Main Review Content (Original Review) */
+/* Main Review Content (initial Review) */
 .review-content, .review-block {
     padding: 20px;
     border-radius: 10px;
@@ -599,8 +563,7 @@ span .price-small{
     vertical-align: top;
     text-align: center;
 }
-
-/* Reviewer Image (Centered) */
+/* Reviewer Image  */
 .reviewer-image {
     width: 80px;
     height: 80px;
@@ -610,7 +573,6 @@ span .price-small{
     margin-left: auto;
     margin-right: auto; 
 }
-
 /* Review Text */
 .review-text {
     font-family: "Montserrat";
@@ -621,7 +583,6 @@ span .price-small{
     width: 100%;
     white-space: normal; 
 }
-
 /* Reviewer Name */
 .reviewer-name {
     font-family: "Montserrat";
@@ -632,15 +593,13 @@ span .price-small{
     text-align: left;
     width: 100%;
     
-
 } 
 .reviewer-name span{
     font-style: italic;
     font-weight: 400;
     font-family: "Montserrat";
 }
-
-/* Show More Button */
+/* Show More Btn */
 .show-more-btn {
     cursor: pointer;
     display: block;  
@@ -652,70 +611,60 @@ span .price-small{
 .additional-reviews {
     display: none; 
 }
-
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .review-content, .review-block {
         width: 90%; 
     }
-
     .reviews-container {
         flex-wrap: nowrap;
         overflow-x: auto;
     }
 }
 .recent-post {
+    align-content: center;
     width: 80%;
     margin: 0 auto; 
     padding: 20px;
     background-color: #ffffff;
 }
-
 .post-title {
     text-align: center; 
     font-size: 2rem;
     color: #333;
 }
-
 .date-time {
     display: flex;
     justify-content: space-between; 
     align-items: center;
     margin-top: 10px;
 }
-
 .post-date {
     font-size: 1rem;
     color: #080000;
     font-family: "Montserrat";
     font-weight: 400;
 }
-
 .time-icon {
     display: flex;
     align-items: center;
 }
-
 .time-icon img {
     margin-right: 5px;
 }
-
 .time-icon span {
     font-size: 1rem;
     color: #2A90D9;
 }
-
 .description {
     margin-top: 20px;
     text-align: left; 
 }
-
 .description h4 {
     font-size: 1.5rem;
     font-family: "Montserrat";
     color: #0c0000;
 }
-
 .description h5 {
     font-size: 1rem;
     font-weight: 400;
@@ -729,14 +678,12 @@ span .price-small{
     text-align: left;  
     line-height: 2.5;
 }
-
 .title-of-section h2 {
     font-size: 24px;  
     margin-bottom: 10px;  
     color: #0f0000;  
     font-family: "Montserrat";
 }
-
 .title-of-section h4 {
     font-size: 18px;  
     margin: 5px 0;  
@@ -752,14 +699,12 @@ span .price-small{
     max-width: 400px; 
     margin: 0 auto;  
 }
-
 .newsletter h2 {
     font-size: 24px;
     font-family: 'Montserrat';
     color: #333;
     margin-bottom: 10px;
 }
-
 .newsletter h4 {
     font-size: 18px;
     font-family: 'Montserrat';
@@ -772,16 +717,13 @@ span .price-small{
     position: relative;
     display: inline-block;
 }
-
 /* First icon */
 .input-bg {
     width: 328;
     height: 40px;
     display: block;
     border-radius: 4px;
-
 }
-
 /* Second icon: Send button background */
 .send-bg {
     position: absolute;
@@ -799,7 +741,7 @@ span .price-small{
     height: 24px;
     align-content: left;
 }
-/* Socials Section Styling */
+/* Socials Section*/
 .socials {
     display: flex;
     flex-direction: column;
@@ -810,7 +752,6 @@ span .price-small{
     height: 220px; 
     position: relative;
 }
-
 /* Logo Styling */
 .socials h2 {
     font-size: 28px; 
@@ -821,16 +762,13 @@ span .price-small{
     top: 10px; 
     left: 20px; 
 }
-
 /* Custom colors for logo */
 .bluee {
     color: #007bff;
 }
-
 .peachh {
     color: #ff6347;
 }
-
 /* Social Media Icons */
 .social-icons {
     display: flex;
@@ -841,18 +779,15 @@ span .price-small{
     left: 20px; 
     transform: translateY(-40%);
 }
-
 .social-icons img {
     width: 35px; 
     height: 35px;
     transition: transform 0.3s ease;
 }
-
 .social-icons img:hover {
     transform: scale(1.2);
 }
-
-/* Designer Credit */
+/* Designer Credit section */
 .socials p {
     font-size: 13px; 
     color: #666;
@@ -860,22 +795,18 @@ span .price-small{
     bottom: 10px; 
     left: 20px; 
 }
-
 .socials .designer {
     font-weight: bold;
     color: #2A90D9;
     text-decoration: underline; 
     text-decoration-color: #2A90D9;  
-
 }
-/* deals*/
+/* deals section*/
 .deals-content, .menu-list {
     padding: 40px;
     text-align: left;
 }
-
-
-/* Deals Page */
+/* Deals Page section*/
 .deals-page {
     position: fixed;
     top: 0;
@@ -887,12 +818,10 @@ span .price-small{
     z-index: 1000;
     display: none; 
 }
-
-/* Deals Content Styling */
+/* Deals Content Style */
 .deals-content {
     padding: 20px;
 }
-
 .special-offer {
     margin: 20px;
     padding: 20px;
@@ -903,12 +832,10 @@ span .price-small{
     flex-direction: column;
     align-items: center;
 }
-
 .offer-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
 
 
