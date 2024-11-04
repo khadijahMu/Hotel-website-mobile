@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     const splashScreen = document.getElementById('splash-screen');
     setTimeout(() => {
         splashScreen.classList.add('hidden');
-    }, 2000); // Adjust delay as needed (in milliseconds)
+    }, 2000);
 });
 // Get the elements
 const menuIcon = document.getElementById('menu-icon');
